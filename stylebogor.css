@@ -1,0 +1,196 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #dedede;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}
+.layar-penuh {
+    width: 100%;
+}
+nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position:fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+nav.hijau {
+    background-color: #fff;
+}
+nav .logo {
+    float:right;
+    position:static;
+    line-height: 10px;
+    text-align:center;
+}
+nav .logo img {
+    vertical-align:baseline;
+    width: 50px;
+}
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+nav ul li a {
+    color: black;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a :hover {
+    text-decoration: underline;
+}
+
+
+/*pengaturan header*/
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),
+    rgba(4,9,30,0.7)), url(Images/Hidden_Gem_Bogor.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 62px;
+}
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    left: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #b1b1b1;
+}
+
+/* container */
+.container {
+    width: 70%;
+    margin: auto;
+}
+.container h2 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+.content h2 {
+    margin-bottom: 20px;
+}
+.content p {
+    color: #0c0c0c;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+/*footer*/
+footer {
+    padding: 50px 0px 50px 0px;
+    background-color: #343a40;
+    color: #fff;
+  }
+  footer .layar-dalam {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .layar-dalam div {
+    width: 20%;
+  }
+  footer .layar-dalam h5 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .location {
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 10px 0;
+}
+.location iframe {
+    width: auto;
+    height: auto;
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+  footer .layar-dalam .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #666;
+    text-align: center;
+  }
+  footer .layar-dalam .tombol {
+    color: white;
+  }
+
+@media screen and (max-width:991.98px) {
+    .layar-dalam {
+        width: 90%;
+    }
+    nav .menu ul {
+        display: none;
+        margin-top: 60px;
+        position:absolute;
+        top:0;
+        left:0;
+        width: 100%;
+    }
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid #dedede;
+        background-color: aliceblue;
+        line-height: 40px;
+    }
+    nav .menu ul li a {
+        color: black;
+    }
+    .tombol-menu{
+        display: flex;
+    }
+}
